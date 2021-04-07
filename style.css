@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@700&family=Montserrat&display=swap");
+
+.body {
+  font-family: Montserrat, sans-serif;
+  padding-top: 70px;
+  background-color: #eee;
+  margin: 0;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.jumbotron {
+  padding-top: 8rem;
+  background-image: url(img/backgroundjumbotron5.jpg);
+  background-size: cover;
+  height: 750px;
+}
+
+.jumbotron h1 {
+  font-family: Lemonada, sans-serif;
+  padding-top: 45px;
+  line-height: 1em;
+}
+
+.jumbotron p {
+  padding-top: 20px;
+  font-size: 30px;
+}
+
+#about p {
+  text-align: justify;
+}
+
+#projects {
+  background-color: #212529;
+}
+
+/* .card .card-body {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.card .card-body:hover {
+  opacity: 1;
+} */
+
+#galery {
+  background-color: #212529;
+}
+
+#galery h2 {
+  padding-bottom: 25px;
+}
+
+#contact {
+  background: #eee;
+}
+
+#connect {
+  background: #eee;
+  padding-bottom: 70px;
+}
+
+.sosmed {
+  top: 50%;
+  transform: translateY(-50);
+  width: 100%;
+  text-align: center;
+}
+
+.tombol {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background: #eee;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #212521;
+  overflow: hidden;
+  position: relative;
+}
+
+.tombol i {
+  line-height: 70px;
+  font-size: 35px;
+  transition: 0.3s linear;
+}
+
+.tombol:hover i {
+  transform: scale(1.6);
+  color: #eee;
+}
+
+.tombol::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #212521;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+.tombol:hover::before {
+  animation: aaa 0.7s 1;
+  left: -10%;
+  top: -10%;
+}
+
+@keyframes aaa {
+  0% {
+    left: -110%;
+    top: 90%;
+  }
+  50% {
+    left: 10%;
+    top: 30%;
+  }
+  100% {
+    left: -10%;
+    top: -10%;
+  }
+}
