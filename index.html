@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
     <!-- Font -->
@@ -51,24 +53,24 @@
     <section class="jumbotron text-center shadow">
       <img src="img/jumbotron-natha.jpg" alt="Natha" width="300" class="rounded-circle img-thumbnail" />
       <h1 class="display-4 text-white">I Gede Rainnatha Sudana</h1>
-      <p class="lead text-white">College Student | Gamer | Tech Enthusiast</p>
+      <p class="lead text-white"></p>
     </section>
     <!-- End Jumbotron -->
     <!-- About -->
     <section id="about">
       <div class="container">
         <div class="row text-center mb-4">
-          <div class="col">
+          <div class="col" data-aos="fade-down">
             <h2>About Me</h2>
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-5">
+          <div class="col-md-5" data-aos="fade-right" data-aos-duration="1400" data-aos-delay="300">
             <p>
               Hello, I'm Natha. I started to love computer science since elementary school, and has becomemy life-long love. I also have a passion for web designing, photography and videography, I can spend more than 8 hours in front of the computer on editing and designing. I also like watching movies and listening to music.
             </p>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5" data-aos="fade-left" data-aos-duration="1400" data-aos-delay="500">
             <p>
               I am enthusiastic about technological development, likes to try new thing, as well as creative and  passionate in designing. These days my time is spent studying, designing, prototyping, and coding. Apart from college you'll find me playing video games, and petting all the good dogs and cats.
             </p>
@@ -82,13 +84,15 @@
     <section id="projects">
       <div class="container">
         <div class="row text-center text-white mb-4">
-          <div class="col">
+          <div class="col" data-aos="fade-down">
             <h2>My Projects</h2>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-4">
-            <div class="card">
+            <div class="card" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
               <img src="img/projects/codingcloseup.jpg" class="card-img-top" alt="project1" />
               <div class="card-body">
                 <h5 class="card-title text-center">Learning Process</h5>
@@ -97,7 +101,9 @@
             </div>
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card">
+            <div class="card" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2100" data-aos-delay="200">
               <img src="img/projects/gwk.jpg" class="card-img-top" alt="project2" />
               <div class="card-body">
                 <h5 class="card-title text-center">Garuda Wisnu Kencana Cultural Park </i></h5>
@@ -106,7 +112,9 @@
             </div>
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card">
+            <div class="card" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2200" data-aos-delay="400">
               <img src="img/projects/pantai.JPG" class="card-img-top" alt="project3" />
               <div class="card-body">
                 <h5 class="card-title text-center">Beach <i class="bi bi-brightness-alt-high"></i></h5>
@@ -115,7 +123,9 @@
             </div>
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card">
+            <div class="card" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2300" data-aos-delay="600">
               <img src="img/projects/rakitpccloseup.jpg" class="card-img-top" alt="project4" />
               <div class="card-body">
                 <h5 class="card-title text-center">Build a PC <i class="bi bi-cpu"></i></h5>
@@ -124,7 +134,9 @@
             </div>
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card">
+            <div class="card" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2400" data-aos-delay="800">
               <img src="img/projects/kamera.jpg" class="card-img-top" alt="project5" />
               <div class="card-body">
                 <h5 class="card-title text-center">Old School Camera <i class="bi bi-camera-fill"></i></h5>
@@ -138,11 +150,13 @@
     <!-- EndProjecs -->
     <!-- Galleries -->
     <section id="galery">
-      <div class="container">
+      <div class="container" data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1400">
         <div class="row text-center text-white">
           <h2>My Gallery</h2>
         </div>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" >
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -258,6 +272,21 @@
       </p>
     <!-- EndFooter -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.from('.navbar', { duration: 1.5, y: '-100%', opacity: 0, ease: 'sine' })
+      gsap.from('.jumbotron img', { duration: 1, y: -70, opacity: 0, delay: 1, ease: 'back' })
+      gsap.from('.display-4', { duration: 1, y: -50, opacity: 0, delay: 1.5, ease: 'back' })
+      gsap.to('.lead', { duration: 4, delay: 2, text: 'College Student | Gamer | Tech Enthusiast' })
+    </script>
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbxgzkTHaOysnn3m_jjag6PFaE7PLxgjpEChs87YGPuE2YqX1dwKMdaFyn6rb6Q16l5h/exec';
       const form = document.forms['contact-form'];
